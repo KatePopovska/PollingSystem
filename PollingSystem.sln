@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingSystem.ConsoleClient
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingSystem.Application", "PollingSystem.Application\PollingSystem.Application.csproj", "{212E3325-4FC0-4A1C-8186-7FC15C08436A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingSystem.Web", "PollingSystem.Web\PollingSystem.Web.csproj", "{276B8989-5048-4DD3-A993-9CEDD18F7864}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingSystem.Web", "PollingSystem.Web\PollingSystem.Web.csproj", "{D0F47B06-C624-4152-8A48-73C204959BC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{212E3325-4FC0-4A1C-8186-7FC15C08436A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{212E3325-4FC0-4A1C-8186-7FC15C08436A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{212E3325-4FC0-4A1C-8186-7FC15C08436A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{276B8989-5048-4DD3-A993-9CEDD18F7864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{276B8989-5048-4DD3-A993-9CEDD18F7864}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{276B8989-5048-4DD3-A993-9CEDD18F7864}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{276B8989-5048-4DD3-A993-9CEDD18F7864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F47B06-C624-4152-8A48-73C204959BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F47B06-C624-4152-8A48-73C204959BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F47B06-C624-4152-8A48-73C204959BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F47B06-C624-4152-8A48-73C204959BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

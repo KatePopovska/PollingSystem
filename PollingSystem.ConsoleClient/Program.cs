@@ -4,26 +4,31 @@ class Program
 {
     static void Main(string[] args)
     {
-        var builder = new PollBuilder("What's your hobby?");
-        builder.AddAnswer(Guid.Parse("00BB15E6-0775-4F92-B6B4-E5DE7E470A21"), "Volleyboll");
-        builder.AddAnswer(Guid.Parse("FC4C71B6-C26D-480D-8236-735C40D483FB"), "Footboll");
-        builder.AddAnswer(Guid.Parse("893DA313-5FD1-461C-8FAA-21009D200388"), "Guitar");
+        var builder = new PollBuilder("What is your favorite option?")
+     .AddAnswer(Guid.Parse("51611623-e72f-0488-4011-be4f13c8e936"), "Normal")
+     .AddAnswer(Guid.Parse("b253b82c-90a1-2183-4053-48f910a49247"), "Not bad")
+     .AddAnswer(Guid.Parse("50f0b6ee-ba6e-f988-4f3b-79c85308ed25"), "Awful")
+     .AddAnswer(Guid.Parse("9ebb2234-75cb-eeb2-4fed-1774318d9ce8"), "Super")
+     .AddAnswer(Guid.Parse("51611623-e72f-0488-4011-be4f13c8e936"), "Very cool!");
 
         var poll = builder.Build();
 
-        /*poll.VoteTo(1);
-        poll.VoteTo(2);
-        poll.VoteTo(3);
-        poll.VoteTo(1);
-        poll.VoteTo(2, 10);
+        poll.VoteTo(Guid.Parse("50f0b6ee-ba6e-f988-4f3b-79c85308ed25"));
+        poll.VoteTo(Guid.Parse("50f0b6ee-ba6e-f988-4f3b-79c85308ed25"));
+        poll.VoteTo(Guid.Parse("b253b82c-90a1-2183-4053-48f910a49247"));
+        poll.VoteTo(Guid.Parse("b253b82c-90a1-2183-4053-48f910a49247"));
+        poll.VoteTo(Guid.Parse("51611623-e72f-0488-4011-be4f13c8e936"));
+        poll.VoteTo(Guid.Parse("51611623-e72f-0488-4011-be4f13c8e936"));
+        poll.VoteTo(Guid.Parse("b253b82c-90a1-2183-4053-48f910a49247"));
+        poll.VoteTo(Guid.Parse("9ebb2234-75cb-eeb2-4fed-1774318d9ce8"));
+        poll.VoteTo(Guid.Parse("9ebb2234-75cb-eeb2-4fed-1774318d9ce8"));
+        poll.VoteTo(Guid.Parse("9ebb2234-75cb-eeb2-4fed-1774318d9ce8"));
+        poll.VoteTo(Guid.Parse("9ebb2234-75cb-eeb2-4fed-1774318d9ce8"), 10);
 
-        using (var context = new ApplicationDbContext())
-        {
 
-        }*/
-        var results = builder.GetResult(poll);
+        var result = builder.GetResult(poll);
 
-        Console.WriteLine(results.GetView());
+        Console.WriteLine(result.GetView());
     }
 }
 
